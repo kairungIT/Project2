@@ -1,22 +1,23 @@
 import streamlit as st
 import pandas as pd
 
+st.title("การทดสอบสร้างเว็บด้วยPython")
+st.image("data.jpeg")
+st.header("การนำเสนอข้อมูลกราฟด้วย Python") 
+
 col1, col2, col3 = st.columns(3)
-
-
-
 
 with col1:
    st.header("Versicolor")
-   st.image("https://c.pxhere.com/photos/f2/77/iris_flower_purple-1401467.jpg!d")
+   st.image("https://en.m.wikipedia.org/wiki/File:Iris_versicolor_3.jpg")
 
 with col2:
    st.header("Verginica")
-   st.image("https://www.fs.usda.gov/wildflowers/beauty/iris/Blue_Flag/images/iris_virginica/iris_virginica_virginica_lg.jpg")
+   st.image("https://uk.m.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Iris_virginica.jpg")
 
 with col3:
    st.header("Setosa")
-   st.image("https://upload.wikimedia.org/wikipedia/commons/4/41/Iris_versicolor_3.jpg")
+   st.image("https://en.m.wikipedia.org/wiki/File:Iris_setosa.JPG")
 
 #import pandas as pd
 df=pd.read_csv("./data/iris.csv")
